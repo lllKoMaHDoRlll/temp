@@ -1,55 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+    <title>Форма</title>
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
 </head>
+
 <body>
-    <div class="content">
-        <div class="calculator">
-            <div class="calc-head">
-                <h1 class="calc-text">Рассчитать стоимость товара</h1>
+    <div id="modal" data--modal="hidden">
+        <div id="modal-inner">
+            <div id="modal-head">
+                <h1>Обратная связь</h1>
+                <button id="close-button">Закрыть</button>
             </div>
-            <div class="calc-body">
-                <div class="calc-input">
-                    <div id="quantity-outter">
-                        <h3 class="calc-text">Количество: </h3>
-                        <input type="text" name="quantity" id="quantity-input" class="underline-to-border calc-text">
+            <div id="modal-body">
+                <form id="form" accept-charset="UTF-8">
+                    <div id="form-name">
+                        <label for="uname">ФИО:</label>
+                        <input type="text" name="uname" id="uname" class="save" required placeholder="Ваше имя">
                     </div>
-                    <div id="product-type-outter">
-                        <h3 class="calc-text">Товар: </h3>
-                        <fieldset id="calc-radio-group">
-                        </fieldset>
+                    <div id="form-email">
+                        <label for="uemail">Почта:</label>
+                        <input type="email" name="uemail" id="uemail" class="save" placeholder="Ваша почта">
                     </div>
-                    <div id="subproducts-outter">
-                        <div>
-                            <h3 class="calc-text">Сорт:</h3>
-                            <div id="subproducts">
-                                <select class="calc-text" name="subproducts-select" id="subproducts-select" disabled>
-                                    <option value="">Select subproduct</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div>
-                            <h3 class="calc-text">Доп. Услуга: </h3>
-                            <div id="subproduct-properties">
-                                
-                            </div>
-                        </div>
+                    <div id="form-phone">
+                        <label for="uphone">Телефон:</label>
+                        <input type="tel" name="uphone" id="uphone" class="save" placeholder="Ваш телефонный номер">
                     </div>
-                </div>
-                <div id="calc-button-outter">
-                    <button type="button" id="calc-button" class="calc-text">Рассчитать</button>
-                </div>
-                <div class="calc-result">
-                    <h2 class="calc-text">Цена: </h2>
-                    <span id="result" class="calc-text"></span>
-                </div>
+                    <div id="form-organisation">
+                        <label for="uorganisation">Организация:</label>
+                        <input type="text" name="uorganisation" id="uorganisation" class="save" placeholder="Ваша Организация">
+                    </div>
+                    <div id="form-message">
+                        <label for="umessage">Сообщение:</label>
+                        <textarea name="umessage" id="umessage" rows="5" class="save" required></textarea>
+                    </div>
+                    <div id="form-acception">
+                        <input type="checkbox" name="uacception" id="uacception" required checked>
+                        <label for="uacception">Я согласен с политикой обработки персональных данных.</label>
+                    </div>
+                    <div>
+                        <button type="button" id="submit-button">Отправить</button>
+                    </div>
+                </form>
             </div>
         </div>
+    </div>
+    <div id="content">
+        <button type="button" id="feedback-button">Обратная связь</button>
     </div>
 </body>
 </html>
