@@ -372,6 +372,13 @@
      position:absolute;
  }
 
+ .cases {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3% 0;
+ }
+
  #latest-cases {
     margin: 50px;
     display: flex;
@@ -380,7 +387,12 @@
     align-items: center;
 }
 
+#latest-cases-header-outter > h1{
+    text-align: center;
+}
+
 #latest-cases-cards {
+    padding: 3%;
     width: 100%;
     display: flex;
     flex-wrap: nowrap;
@@ -395,12 +407,24 @@
     margin-bottom: 10px;
 }
 
+.case.separate-thumbnail .case-content-inner {
+    position: unset;
+}
+
+.case.separate-thumbnail .case-photo {
+    box-shadow: none;
+}
+
 .case-photo {
+    box-shadow: 0px -150px 71px -59px rgba(0, 0, 0, 0.82) inset;
     height: 100%;
     z-index: -1;
     border-radius: 10px;
     overflow: hidden;
     object-fit: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .case-photo > img {
@@ -439,7 +463,9 @@
     padding: 20px 70px;
     background-color: #FFF;
     border-radius: 3px;
-    border: 1px solid #999;
+    border: 1px solid #CCC;
+    text-align: center;
+    cursor: pointer;
 }
 
  @media (min-width: 1260px) {
@@ -641,6 +667,11 @@
         min-height: 600px;
     }
 
+    .case-photo.case.separate-thumbnail > img {
+        width: 100%;
+        height: unset;
+    }
+
     .case-photo > img {
         border-radius: 5px;
         overflow: hidden;
@@ -656,7 +687,7 @@
     .case.type1 {
         width: 33%;
     }
-    
+
     .case.type2 {
         width: 66%;
     }
@@ -664,7 +695,7 @@
     .case-title {
         font-size: 16pt;
     }
-    
+
     .case-text {
         font-size: unset;
     }
@@ -672,7 +703,7 @@
     .case.separate-thumbnail .case-photo {
         object-fit: unset;
     }
-    
+
     .case.separate-thumbnail img {
         width: 100%;
         height: unset;
@@ -681,10 +712,14 @@
     .case.separate-thumbnail .case-content {
         height: 50%;
     }
-    
+
     .case.separate-thumbnail .case-content-inner {
         bottom: 100%;
         height: 100%;
+    }
+
+    .case.separate-thumbnail .case-content-inner {
+        position: absolute;
     }
 
  }
