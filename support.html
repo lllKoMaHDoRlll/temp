@@ -3,801 +3,455 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./slider/splide.min.css">
     <link rel="stylesheet" href="style.css">
-    <title>Coffee Store</title>
-    <script src="./slider/splide.min.js" defer></script>
-    <script src="https://kit.fontawesome.com/f2109eb4b4.js" crossorigin="anonymous" defer></script>
-    <script src="script.js" defer></script>
+    <title>Финальный проект</title>
+
+    <script src="https://kit.fontawesome.com/13c267004c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <section id="container">
-        <header>
-            <div id="logo-outter">
-                <img src="media/images/cat_logo.png" alt="Logo">
+<div class="header">
+    <div class="video-container">
+        <video src="img/video.mp4" autoplay loop muted preload="auto"></video>
+        <div class="blackout"></div>
+    </div>
+    <div class="menu-container">
+        <div class="menu">
+            <div class="logo">
+                <img src="img/drupal-coder.svg" alt="D">
             </div>
-            <div id="nav-outter">
-                <nav>
-                    <ul id="nav-links">
-                        <li><a href="#company-thumbnail" class="text-light">About</a></li>
-                        <li><a href="#company-services" class="text-light">Services</a></li>
-                        <li id="nav-links-dropout-button" >
-                            <p class="text-light" id="nav-links-dropout-button-inner">Supports <i class="fa-solid fa-angle-down"></i></p>
-                            <div id="dropout-menu">
-                                <ul>
-                                    <li><a href="#company-support">Order</a></li>
-                                    <li><a href="#company-support">Events</a></li>
-                                    <li><a href="#company-support">Sponsors</a></li>
-                                    <li><a href="#company-support">Contacts</a></li>
-                                    <li><a href="#company-support">FAQ</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li><a href="#pricelist" class="text-light">Pricelist</a></li>
-                        <li><a href="#company-reviews" class="text-light">Reviews</a></li>
-                    </ul>
-                </nav>
+            <ul>
+                <li>Поддержка сайтов</li>
+                <li>тарифы</li>
+                <li>наши работы</li>
+                <li id="dropout-menu-li">
+                    <p>администрирование<i class="fa-solid fa-chevron-down"></i></p>
+                    <div id="dropout-menu-outter">
+                        <ul id="dropout-menu">
+                            <li>миграция</li>
+                            <li>бэкапы</li>
+                            <li>аудит безопасности</li>
+                            <li>оптимизация скорости</li>
+                            <li>переезд на https</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>контакты</li>
+            </ul>
+            <div class="contact">
+                8-800-222-26-73
             </div>
-            <div id="contacts-outter">
-                <span id="contact-tel">
-                    <a href="tel:+79000000000" class="text-light">8-800-000-00-00</a>
-                </span>
+            <div class="lang">
+                <p>ru</p>
+                <span><i class="fa-solid fa-chevron-down"></i></span>
             </div>
-            <div id="lang-switcher-outter">
-                <span id="cur-lang" class="text-light">
-                    EN
-                </span>
-                <span id="lang-switcher-icon" class="text-light">
-                    <i class="fa-solid fa-angle-down"></i>
-                </span>
-            </div>
-            <div id="nav-links-menu-mobile">
-                <div id="menu-mobile-icon-outter" class="text-light">
-                    <i class="fa-solid fa-bars" id="menu-mobile-icon"></i>
-                </div>
-                <div id="nav-links-menu-mobile-content">
+            <div class="navpanel">
+                <span id="bars"><i class="fa-solid fa-bars" id="mobile-menu-icon"></i></span>
+                <div id="mobile-menu-outter">
                     <ul>
-                        <li><a href="#company-thumbnail" class="text-light">About</a></li>
-                        <li><a href="#company-services" class="text-light">Services</a></li>
-                        <li><a href="#company-support" class="text-light">Supports</a></li>
-                        <li><a href="#pricelist" class="text-light">Pricelist</a></li>
-                        <li><a href="#company-reviews" class="text-light">Reviews</a></li>
+                        <li><a href="#support">поддержка сайтов</a></li>
+                        <li><a href="#plans">тарифы</a></li>
+                        <li><a href="#cases">наши работы</a></li>
+                        <li><a href="#services">администрирование</a></li>
+                        <li><a href="#webform">контакты</a></li>
                     </ul>
                 </div>
             </div>
-        </header>
-        <section id="company-thumbnail">
-            <div id="thumbnail-body">
-                <div id="company-thumbnail-header">
-                    <h1 class="text-light">Meet best coffee & fluffiest cats at Coffee Cat™</h1>
-                </div>
-                <div id="company-thumbnail-body" class="text-light">
-                    <p class="text-light">Coffee Cat invites you to experience new feelings.</p>
-                </div>
-                <div id="pricelist-button-outter" class="text-light">
-                    <button type="button" class="text-light" id="pricelist-button">Price List</button>
-                </div>
+        </div>
+    </div>
+    <div class="data-container">
+        <div class="text">
+            <h1>Поддержка <br> сайтов на Drupal</h1>
+            <p>
+                Сопровождение и поддержка сайтов <br> на CMS Drupal любых версий и запущенности
+            </p>
+            <div class="button-container">
+                <button>ТАРИФЫ</button>
             </div>
-            <div id="thumbnail-achievments">
-                <div class="thumbnail-achievment">
-                    <h3 class="text-light">
+        </div>
+        <div class="achievements">
+            <div class="achievement">
+                <div class="cup-container">
+                    <h2 class="main-text" id="main-text-big">
                         #1
-                    </h3>
-                    <p class="text-light">
-                        Coffee store worldwide
-                    </p>
+                    </h2>
+                    <img src="img/cup.png" alt="">
                 </div>
-                <div class="thumbnail-achievment">
-                    <h3 class="text-light">
-                        3+
-                    </h3>
-                    <p class="text-light">
-                        Michelin stars received in 2017, 2019, 2023
-                    </p>
-                </div>
-                <div class="thumbnail-achievment">
-                    <h3 class="text-light">
-                        14
-                    </h3>
-                    <p class="text-light">
-                        Types of coffee
-                    </p>
-                </div>
-                <div class="thumbnail-achievment">
-                    <h3 class="text-light">
-                        2000+
-                    </h3>
-                    <p class="text-light">
-                        Employees enjoying making you a cup of coffee
-                    </p>
-                </div>
-                <div class="thumbnail-achievment">
-                    <h3 class="text-light">
-                        350 000
-                    </h3>
-                    <p class="text-light">
-                        Total clients served
-                    </p>
-                </div>
-                <div class="thumbnail-achievment">
-                    <h3 class="text-light">
-                        200+
-                    </h3 class="text-light">
-                    <p class="text-light">
-                        Coffee houses around the world
-                    </p>
-                </div>
+                <p class="additional-text">
+                    Drupal-разработчик в России по версии Рейтинга Рунета
+                </p>
             </div>
-        </section>
-        <div id="bg-video">
-            <video src="media/videos/coffee_bg123.webm" autoplay loop muted></video>
-        </div>
-    </section>
-    <section id="company-services">
-        <div id="services-thumbnail">
-            <div id="services-thumbnail-header-outter">
-                <h1>
-                    For 10 years our coffee house has been pleasing visitors
-                </h1>
+            <div class="achievement">
+                <h2 class="main-text">
+                    3+
+                </h2>
+                <p class="additional-text">
+                    Средний опыт специалистов более 3 лет
+                </p>
             </div>
-            <div id="services-thumbnail-text-outter">
-                <p>
-                    We try our best for you
+            <div class="achievement">
+                <h2 class="main-text">
+                    14
+                </h2>
+                <p class="additional-text">
+                    лет опыта в сфере Drupal
+                </p>
+            </div>
+            <div class="achievement">
+                <h2 class="main-text">
+                    50+
+                </h2>
+                <p class="additional-text">
+                    Модулей и тем в формате DrupalGive
+                </p>
+            </div>
+            <div class="achievement">
+                <h2 class="main-text">
+                    90 000+
+                </h2>
+                <p class="additional-text">
+                    часов поддержки сайтов на Drupal
+                </p>
+            </div>
+            <div class="achievement">
+                <h2 class="main-text">
+                    300+
+                </h2>
+                <p class="additional-text">
+                    проектов на поддержке
                 </p>
             </div>
         </div>
-        <div id="services-content">
-            <div class="service-card">
-                <div class="service-card-header">
-                    <img src="./media/images/services/1.png" alt="meow">
-                </div>
-                <div class="service-card-body">
-                    <p>We use the best coffee beans</p>
-                </div>
+    </div>
+</div>
+<div class="services" id="services">
+</div>
+<div class="support" id="support">
+    <div id="company-support">
+        <div id="support-header-outter">
+            <h1>Поддержка от Drupal-coder</h1>
+        </div>
+        <div id="support-cards">
+            <div class="support-card">
+                <div class="support-card-number"><span>01.</span></div>
+                <div class="support-card-header"><h3>Постановка задачи по Email</h3></div>
+                <div class="support-card-text"><p>
+                    Удобная и привычная модель постановки задач, при которой задачи фиксируются и никогда не теряются.
+                </p></div>
+                <div class="support-card-img"><img src="img/support1.svg"></div>
             </div>
-            <div class="service-card">
-                <div class="service-card-header">
-                    <img src="./media/images/services/2.png" alt="meow">
-                </div>
-                <div class="service-card-body">
-                    <p>We have the furry cats ourselves</p>
-                </div>
+            <div class="support-card">
+                <div class="support-card-number"><span>02.</span></div>
+                <div class="support-card-header"><h3>Система Helpdesk - отчётность, прозрачность</h3></div>
+                <div class="support-card-text"><p>
+                    Возможность посмотреть все заявки в работе и отработанные часы в личном кабинете через браузер. Более 122737 тикетов уже выполнено!
+                </p></div>
+                <div class="support-card-img"><img src="img/support2.svg"></div>
             </div>
-            <div class="service-card">
-                <div class="service-card-header">
-                    <img src="./media/images/services/3.png" alt="meow">
-                </div>
-                <div class="service-card-body">
-                    <p>The coffee house has the most cozy and fluffy atmosphere</p>
-                </div>
+            <div class="support-card">
+                <div class="support-card-number"><span>03.</span></div>
+                <div class="support-card-header"><h3>Расширенная техническая поддержка</h3></div>
+                <div class="support-card-text"><p>
+                    Возможность организации расширенной техподдержки с 6:00 до 22:00 без выходных.
+                </p></div>
+                <div class="support-card-img"><img src="img/support3.svg"></div>
             </div>
-            <div class="service-card">
-                <div class="service-card-header">
-                    <img src="./media/images/services/4.png" alt="meow">
-                </div>
-                <div class="service-card-body">
-                    <p>There are plenty of board games for relaxing with your kitty friends</p>
-                </div>
+            <div class="support-card">
+                <div class="support-card-number"><span>04.</span></div>
+                <div class="support-card-header"><h3>Персональный менеджер проекта</h3></div>
+                <div class="support-card-text"><p>
+                    Ваш менеджер проекта всегда в курсе текущего состояния проекта и в любой момент готов ответить на любые вопросы.
+                </p></div>
+                <div class="support-card-img"><img src="img/support4.svg"></div>
             </div>
-            <div class="service-card">
-                <div class="service-card-header">
-                    <img src="./media/images/services/5.png" alt="meow">
-                </div>
-                <div class="service-card-body">
-                    <p>You can't feed the seals, just play with them</p>
-                </div>
+            <div class="support-card">
+                <div class="support-card-number"><span>05.</span></div>
+                <div class="support-card-header"><h3>Удобные способы оплаты</h3></div>
+                <div class="support-card-text"><p>
+                    Безналичный расчет по договору или электронные деньги: WebMoney, Яндекс.Деньги, Paypal.
+                </p></div>
+                <div class="support-card-img"><img src="img/support5.svg"></div>
             </div>
-            <div class="service-card">
-                <div class="service-card-header">
-                    <img src="./media/images/services/6.png" alt="meow">
-                </div>
-                <div class="service-card-body">
-                    <p>In addition to coffee, there are items on the menu for a full lunch</p>
-                </div>
+            <div class="support-card">
+                <div class="support-card-number"><span>06.</span></div>
+                <div class="support-card-header"><h3>Работаем с SLA и NDA</h3></div>
+                <div class="support-card-text"><p>
+                    Работа в рамках соглашений о конфиденциальности и об уровне качества работ.
+                </p></div>
+                <div class="support-card-img"><img src="img/support6.svg"></div>
             </div>
-            <div class="service-card">
-                <div class="service-card-header">
-                    <img src="./media/images/services/7.png" alt="meow">
-                </div>
-                <div class="service-card-body">
-                    <p>The best cats. The best cats</p>
-                </div>
+            <div class="support-card">
+                <div class="support-card-number"><span>07.</span></div>
+                <div class="support-card-header"><h3>Штатные специалисты</h3></div>
+                <div class="support-card-text"><p>
+                    Надежные штатные специалисты, никаких фрилансеров.
+                </p></div>
+                <div class="support-card-img"><img src="img/support7.svg"></div>
             </div>
-            <div class="service-card">
-                <div class="service-card-header">
-                    <img src="./media/images/services/8.png" alt="meow">
-                </div>
-                <div class="service-card-body">
-                    <p> We take a responsible approach to the selection of personnel</p>
-                </div>
+            <div class="support-card">
+                <div class="support-card-number"><span>08.</span></div>
+                <div class="support-card-header"><h3>Удобные каналы</h3></div>
+                <div class="support-card-text"><p>
+                    Консультации по телефону, скайпу, в месенджерах.
+                </p></div>
+                <div class="support-card-img"><img src="img/support8.svg"></div>
             </div>
         </div>
-    </section>
-    <section id="company-support">
-        <div id="company-support-header">
-            <h1>Support Coffee Cat</h1>
+    </div>
+    <div id="company-experience">
+        <div id="bg-exp">
+            <!-- <img src="" alt=""> TODO -->
         </div>
-        <div id="support-services">
-            <div class="support-service">
-                <div class="support-service-num">
-                    <p>01.</p>
-                </div>
-                <div class="support-service-header">
-                    <h1>Order online</h1>
-                </div>
-                <div class="support-service-body">
-                    <p>You don't have to stand in line to place an order. do it in our application or on the website</p>
-                </div>
-                <div class="support-service-icon">
-                    <img src="./media/images/support_img/support1.svg" alt="meow">
-                </div>
+        <div id="laptop-img-outter">
+            <img src="img/laptop.png" alt="Laptop" >
+        </div>
+        <div id="company-experience-content">
+            <div id="comp-exp-header">
+                <h1>Экспертиза в Drupal, опыт 14 лет!</h1>
             </div>
-            <div class="support-service">
-                <div class="support-service-num">
-                    <p>02.</p>
-                </div>
-                <div class="support-service-header">
-                    <h1>Not the target audience</h1>
-                </div>
-                <div class="support-service-body">
-                    <p>Our establishment is not suitable for people who are allergic to cute cats</p>
-                </div>
-                <div class="support-service-icon">
-                    <img src="./media/images/support_img/support2.svg" alt="meow">
-                </div>
-            </div>
-            <div class="support-service">
-                <div class="support-service-num">
-                    <p>03.</p>
-                </div>
-                <div class="support-service-header">
-                    <h1>The possibility of development</h1>
-                </div>
-                <div class="support-service-body">
-                    <p>You can take special courses with us and learn how to fix coffee machines</p>
-                </div>
-                <div class="support-service-icon">
-                    <img src="./media/images/support_img/support3.svg" alt="meow">
-                </div>
-            </div>
-            <div class="support-service">
-                <div class="support-service-num">
-                    <p>04.</p>
-                </div>
-                <div class="support-service-header">
-                    <h1>Personal barista</h1>
-                </div>
-                <div class="support-service-body">
-                    <p>During your stay at the coffee cat, you can choose the person who will serve you, if he is available</p>
-                </div>
-                <div class="support-service-icon">
-                    <img src="./media/images/support_img/support4.svg" alt="meow">
-                </div>
-            </div>
-            <div class="support-service">
-                <div class="support-service-num">
-                    <p>05.</p>
-                </div>
-                <div class="support-service-header">
-                    <h1>Easy operation</h1>
-                </div>
-                <div class="support-service-body">
-                    <p>We accept cards from any bank, even electronic money: WebMoney, Yandex.Money, Paypal</p>
-                </div>
-                <div class="support-service-icon">
-                    <img src="./media/images/support_img/support5.svg" alt="meow">
-                </div>
-            </div>
-            <div class="support-service">
-                <div class="support-service-num">
-                    <p>06.</p>
-                </div>
-                <div class="support-service-header">
-                    <h1>Work with investors</h1>
-                </div>
-                <div class="support-service-body">
-                    <p>We are ready to consider any investor proposals if we are talking about cats</p>
-                </div>
-                <div class="support-service-icon">
-                    <img src="./media/images/support_img/support6.svg" alt="meow">
-                </div>
-            </div>
-            <div class="support-service">
-                <div class="support-service-num">
-                    <p>07.</p>
-                </div>
-                <div class="support-service-header">
-                    <h1>Full-time specialists</h1>
-                </div>
-                <div class="support-service-body">
-                    <p>We employ the best baristas from all over the world.</p>
-                </div>
-                <div class="support-service-icon">
-                    <img src="./media/images/support_img/support7.svg" alt="meow">
-                </div>
-            </div>
-            <div class="support-service">
-                <div class="support-service-num">
-                    <p>08.</p>
-                </div>
-                <div class="support-service-header">
-                    <h1>Ready to interact</h1>
-                </div>
-                <div class="support-service-body">
-                    <p>Meetings are held every week to improve the service, where you can send your question or suggestion</p>
-                </div>
-                <div class="support-service-icon">
-                    <img src="./media/images/support_img/support8.svg" alt="meow">
-                </div>
+            <div id="comp-exp-body">
+                <div class="comp-exp-feature"><p>Только системный подход - контроль версий, резервирование и тестирование!</p></div>
+                <div class="comp-exp-feature"><p>Только Drupal сайты, не берем на поддержку сайты на других CMS!</p></div>
             </div>
         </div>
-    </section>
-    <section id="company-experience">
-        <div id="exp-image-outter">
-            <img src="./media/images/laptop.png" alt="meow">
+    </div>
+</div>
+<div class="plans-container" id="plans">
+    <div class="plans">
+        <div class="tariffs">
+            <h2>Тарифы</h2>
         </div>
-        <div id="exp-content">
-            <div id="exp-header-outter">
-                <h1 class="text-light">10 years of customer experience!</h1>
-            </div>
-            <div id="exp-features">
-                <div class="exp-feature">
-                    <p class="text-light">Responsible approach to working with clients, specially selected staff</p>
+        <div class="cards">
+            <div class="card">
+                <div class="card-name-price">
+                    <h2>Стартовый</h2>
+                    <p>От 6 000 <i class="fa-solid fa-ruble-sign"></i></p>
                 </div>
-                <div class="exp-feature">
-                    <p class="text-light">We use only high-quality certified products. and new equipment</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="pricelist">
-        <div id="pricelist-header-outter">
-            <h1>Certificate</h1>
-        </div>
-        <div id="options-outter">
-            <div class="option">
-                <div class="option-thumbnail-outter">
-                    <div class="option-thumbnail-type-outter">
-                        <h3>Basic</h3>
+                <div class="card-body-items">
+                    <div class="card-body-item">
+                        <span><i class="fa-solid fa-check"></i></span>
+                        <p>Консультации и работы по SEO</p>
                     </div>
-                    <div class="option-thumbnail-price-outter">
-                        <span>
-                            200$
-                        </span>
+                    <div class="card-body-item">
+                        <span><i class="fa-solid fa-check"></i></span>
+                        <p>Услуги дизайнера</p>
                     </div>
-                    <div class="option-thumbnail-period-outter">
-                        <span>
-                            per month
-                        </span>
+                    <div class="card-body-item">
+                        <span><i class="fa-solid fa-check"></i></span>
+                        <p>Стандартное время реакции</p>
+                    </div>
+                    <div class="card-body-item">
+                        <span><i class="fa-solid fa-check"></i></span>
+                        <p>Неиспользованные оплаченные часы переносятся на следующий месяц</p>
                     </div>
                 </div>
-                <hr>
-                <div class="option-odds-list">
-                    <ul>
-                        <li><i class="fa-solid fa-check"></i>The validity period is 1 year</li>
-                        <li><i class="fa-solid fa-check"></i>Valid for all products</li>
-                        <li><i class="fa-solid fa-check"></i>It can be purchased not only in the coffee house, but also on the website</li>
-                        <li><i class="fa-solid fa-check"></i>A good way to mske your friend smile</li>
-                    </ul>
-                </div>
-                <div class="option-submission-button-outter">
-                    <button type="button">
-                        Buy now!
+                <div class="card-button">
+                    <button>
+                        Оставить заявку!
                     </button>
                 </div>
             </div>
-            <div class="option main-option">
-                <div class="option-thumbnail-outter">
-                    <div class="option-thumbnail-type-outter">
-                        <h3>Business</h3>
+            <div class="card active" id="main-card">
+                <div class="card-name-price">
+                    <h2>Бизнес</h2>
+                    <p>От 30 000 <i class="fa-solid fa-ruble-sign"></i></p>
+                </div>
+                <div class="card-body-items">
+                    <div class="card-body-item">
+                        <span><i class="fa-solid fa-check"></i></span>
+                        <p>Консультации и работы по SEO</p>
                     </div>
-                    <div class="option-thumbnail-price-outter">
-                        <span>
-                            500$
-                        </span>
+                    <div class="card-body-item">
+                        <span><i class="fa-solid fa-check"></i></span>
+                        <p>Услуги дизайнера</p>
                     </div>
-                    <div class="option-thumbnail-period-outter">
-                        <span>
-                            per month
-                        </span>
+                    <div class="card-body-item">
+                        <span><i class="fa-solid fa-check"></i></span>
+                        <p>Высокое время реакции - до 2 дней</p>
+                    </div>
+                    <div class="card-body-item">
+                        <span><i class="fa-solid fa-check"></i></span>
+                        <p>Неиспользованные часы не переносятся</p>
                     </div>
                 </div>
-                <hr>
-                <div class="option-odds-list">
-                    <ul>
-                        <li><i class="fa-solid fa-check"></i>The validity period is 1 year</li>
-                        <li><i class="fa-solid fa-check"></i>Valid for all products</li>
-                        <li><i class="fa-solid fa-check"></i>It can be purchased not only in the coffee house, but also on the website</li>
-                        <li><i class="fa-solid fa-check"></i>A less budget option to please your friend</li>
-                    </ul>
-                </div>
-                <div class="option-submission-button-outter">
-                    <button type="button">
-                        Buy now!
+                <div class="card-button">
+                    <button>
+                        Оставить заявку!
                     </button>
                 </div>
             </div>
-            <div class="option ">
-                <div class="option-thumbnail-outter">
-                    <div class="option-thumbnail-type-outter">
-                        <h3>VIP</h3>
+            <div class="card" id="card-vip">
+                <div class="card-name-price">
+                    <h2>VIP</h2>
+                    <p>От 270 000 <i class="fa-solid fa-ruble-sign"></i></p>
+                </div>
+                <div class="card-body-items">
+                    <div class="card-body-item">
+                        <span><i class="fa-solid fa-check"></i></span>
+                        <p>Консультации и работы по SEO</p>
                     </div>
-                    <div class="option-thumbnail-price-outter">
-                        <span>
-                            1000$
-                        </span>
+                    <div class="card-body-item">
+                        <span><i class="fa-solid fa-check"></i></span>
+                        <p>Услуги дизайнера</p>
                     </div>
-                    <div class="option-thumbnail-period-outter">
-                        <span>
-                            per month
-                        </span>
+                    <div class="card-body-item">
+                        <span><i class="fa-solid fa-check"></i></span>
+                        <p>Максимальное время реакции - в день обращения</p>
+                    </div>
+                    <div class="card-body-item">
+                        <span><i class="fa-solid fa-check"></i></span>
+                        <p>Неиспользованные оплаченные часы не переносятся</p>
+                    </div>
+                    <div class="card-body-item">
+                        <span><i class="fa-solid fa-check"></i></span>
+                        <p>Реакция на тикет – 1 час</p>
+                    </div>
+                    <div class="card-body-item">
+                        <span><i class="fa-solid fa-check"></i></span>
+                        <p>24/7 мониторинг</p>
                     </div>
                 </div>
-                <hr>
-                <div class="option-odds-list">
-                    <ul>
-                        <li><i class="fa-solid fa-check"></i>The validity period is 1 year</li>
-                        <li><i class="fa-solid fa-check"></i>Valid for all products</li>
-                        <li><i class="fa-solid fa-check"></i>It can be purchased not only in the coffee house, but also on the website</li>
-                        <li><i class="fa-solid fa-check"></i>One of the wonderful gifts for your friend</li>
-                    </ul>
-                </div>
-                <div class="option-submission-button-outter">
-                    <button type="button">
-                        Buy now!
+                <div class="card-button">
+                    <button>
+                        Оставить заявку!
                     </button>
                 </div>
-            </div>
             </div>
         </div>
-        <div id="extra-option-outter">
+        <div class="individual-plan">
             <p>
-                Didn't found your's perfect? Leave a request and we will give you personal proposal.
+                Вам не подходят наши тарифы? Оставьте <br> заявку, и мы предложим вам индивидуальные <br> условия!
             </p>
-            <a href="#">
-                Get personal proposal
-            </a>
+            <a href="">Получить индивидуальный тариф</a>
         </div>
-    </section>
-    <section id="latest-cases">
-        <div id="latest-cases-header-outter">
-            <h1>Latest cases</h1>
-        </div>
-        <div id="latest-cases-cards">
-            <div class="case type1">
-                <div class="case-photo">
-                    <img src="./media/images/cases_photos/1.jpg" alt="Case photo 1">
-                </div>
-                <div class="case-content">
-                    <div class="case-content-inner">
-                        <div class="case-title">
-                            <h3 class="text-light">It is impossible not to share</h3>
-                        </div>
-                        <div class="case-date">
-                            <span>23.11.21</span>
-                        </div>
-                        <div class="case-text">
-                            <p class="text-light">Ginger the cat extorts sweets from visitors with a similar look</p>
-                        </div>
-                    </div>
-                </div>
+    </div>
+</div>
+<div class="cases" id="cases">
+    <div id="latest-cases-header-outter">
+        <h1>Последние кейсы</h1>
+    </div>
+    <div id="latest-cases-cards">
+        <div class="case type1 separate-thumbnail">
+            <div class="case-photo">
+                <img src="./img/case1.webp" alt="Case photo 1">
             </div>
-            <div class="case type2">
-                <div class="case-photo">
-                    <img src="./media/images/cases_photos/2.jpg" alt="Case photo 2">
-                </div>
-                <div class="case-content">
-                    <div class="case-content-inner">
-                        <div class="case-title">
-                            <h3 class="text-light">Incredible musical achievements</h3>
-                        </div>
-                        <div class="case-date">
-                            <span>18.02.22</span>
-                        </div>
-                        <div class="case-text">
-                            <p class="text-light">One of our cats has become a famous rapper</p>
-                        </div>
+            <div class="case-content">
+                <div class="case-content-inner">
+                    <div class="case-title">
+                        <h3>Массовая SEO оптимизация страниц на Drupal 7</h3>
                     </div>
-                </div>
-            </div>
-            <div class="case type1">
-                <div class="case-photo">
-                    <img src="./media/images/cases_photos/3.jpg" alt="Case photo 3">
-                </div>
-                <div class="case-content">
-                    <div class="case-content-inner">
-                        <div class="case-title">
-                            <h3 class="text-light">Barista of the Year Award</h3>
-                        </div>
-                        <div class="case-date">
-                            <span>04.03.22</span>
-                        </div>
-                        <div class="case-text">
-                            <p class="text-light">Boris the cat became the TV presenter of the year on the channel "meow what coffee"</p>
-                        </div>
+                    <div class="case-date">
+                        <span>12.12.23</span>
                     </div>
-                </div>
-            </div>
-            <div class="case type1">
-                <div class="case-photo">
-                    <img src="./media/images/cases_photos/4.jpg" alt="Case photo 4">
-                </div>
-                <div class="case-content">
-                    <div class="case-content-inner">
-                        <div class="case-title">
-                            <h3 class="text-light">Unforgettable feelings</h3>
-                        </div>
-                        <div class="case-date">
-                            <span>11.06.22</span>
-                        </div>
-                        <div class="case-text">
-                            <p class="text-light">A new kind of coffee drives even cats crazy</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="case type1">
-                <div class="case-photo">
-                    <img src="./media/images/cases_photos/5.webp" alt="Case photo 5">
-                </div>
-                <div class="case-content">
-                    <div class="case-content-inner">
-                        <div class="case-title">
-                            <h3 class="text-light">Nice bonuses</h3>
-                        </div>
-                        <div class="case-date">
-                            <span>05.08.23</span>
-                        </div>
-                        <div class="case-text">
-                            <p class="text-light">A photo shoot was arranged for the furriest cat as a thank you for his fluffiness</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="case type2">
-                <div class="case-photo">
-                    <img src="./media/images/cases_photos/6.jpg" alt="Case photo 6">
-                </div>
-                <div class="case-content">
-                    <div class="case-content-inner">
-                        <div class="case-title">
-                            <h3 class="text-light">Records</h3>
-                        </div>
-                        <div class="case-date">
-                            <span>24.12.23</span>
-                        </div>
-                        <div class="case-text">
-                            <p class="text-light">Unbelievable! Murzik fit into the container!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="case type1">
-                <div class="case-photo">
-                    <img src="./media/images/cases_photos/7.jpg" alt="Case photo 7">
-                </div>
-                <div class="case-content">
-                    <div class="case-content-inner">
-                        <div class="case-title">
-                            <h3 class="text-light">A little scandal</h3>
-                        </div>
-                        <div class="case-date">
-                            <span>04.01.24</span>
-                        </div>
-                        <div class="case-text">
-                            <p class="text-light">Egor the cat accidentally spat fur on the client</p>
-                        </div>
+                    <div class="case-text">
+                        <p>Массовая SEO (поисковая) оптимизация подразумевает возможность одновременной...</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="show-more-cases-button-outter">
-            <button type="button" id="show-more-cases">Show more</button>
-        </div>
-    </section>
-    <section id="company-team">
-        <div id="company-team-header-outter">
-            <h1>
-                Our team
-            </h1>
-        </div>
-        <div id="company-employees">
-            <div class="employee-card">
-                <div class="employee-card-img">
-                    <img src="./media/images/employees/empl0.jpg" alt="meow">
-                </div>
-                <div class="employee-card-name">
-                    <h1>Alexander</h1>
-                </div>
-                <div class="employee-card-body">
-                    <p>Director of the company</p>
-                </div>
+        <div class="case type2">
+            <div class="case-photo">
+                <img src="./img/case2.webp" alt="Case photo 2">
             </div>
-            <div class="employee-card">
-                <div class="employee-card-img">
-                    <img src="./media/images/employees/empl1.jpg" alt="meow">
-                </div>
-                <div class="employee-card-name">
-                    <h1>Natalia</h1>
-                </div>
-                <div class="employee-card-body">
-                    <p>General Manager, co-owner</p>
-                </div>
-            </div>
-            <div class="employee-card">
-                <div class="employee-card-img">
-                    <img src="./media/images/employees/empl3.jpg" alt="meow">
-                </div>
-                <div class="employee-card-name">
-                    <h1>Boris</h1>
-                </div>
-                <div class="employee-card-body">
-                    <p>Barista</p>
-                </div>
-            </div>
-            <div class="employee-card">
-                <div class="employee-card-img">
-                    <img src="./media/images/employees/empl4.jpg" alt="meow">
-                </div>
-                <div class="employee-card-name">
-                    <h1>Fedor</h1>
-                </div>
-                <div class="employee-card-body">
-                    <p>Administrator, employee of the hall</p>
-                </div>
-            </div>
-            <div class="employee-card">
-                <div class="employee-card-img">
-                    <img src="./media/images/employees/empl5.jpg" alt="meow">
-                </div>
-                <div class="employee-card-name">
-                    <h1>Elizabeth</h1>
-                </div>
-                <div class="employee-card-body">
-                    <p>Employee of the hall</p>
-                </div>
-            </div>
-            <div class="employee-card">
-                <div class="employee-card-img">
-                    <img src="./media/images/employees/empl2.jpg" alt="meow">
-                </div>
-                <div class="employee-card-name">
-                    <h1>Simon</h1>
-                </div>
-                <div class="employee-card-body">
-                    <p>Barista</p>
+            <div class="case-content">
+                <div class="case-content-inner">
+                    <div class="case-title">
+                        <h3 class="text-light">Initlab — ТОП-1 по поддержке и развитию сайтов на Drupal 2022!</h3>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section id="company-reviews">
-        <div id="company-reviews-header-outter">
-            <h1>Reviews</h1>
-        </div>
-        <div id="reviews-tab">
-            <div id="reviews-tab-content">
-                <div id="review-logo">
-                    <img src="media/images/reviews_logos/1.jpg" alt="Logo" id="review-logo-inner">
-                </div>
-                <div id="review-text">
-                    <p id="review-text-inner">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quos vel vero dolores ullam quaerat sed, in, nesciunt veritatis amet debitis quisquam. Odio omnis vitae molestiae nam illum est veniam.
-                    </p>
-                </div>
-                <div id="review-author">
-                    <p id="review-author-inner">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, perferendis?
-                    </p>
-                </div>
+        <div class="case type1">
+            <div class="case-photo">
+                <img src="./img/case3.webp" alt="Case photo 3">
             </div>
-            <div id="reviews-tab-pagination">
-                <div id="reviews-pagination-arrow-left">
-                    <i class="fa-solid fa-angle-left"></i>
-                </div>
-                <div id="reviews-pagination-current-page">
-                    <p><span id="cur-page">01</span>/<span id="total-pages">08</span></p>
-                </div>
-                <div id="reviews-pagination-arrow-right">
-                    <i class="fa-solid fa-angle-right"></i>
+            <div class="case-content">
+                <div class="case-content-inner">
+                    <div class="case-title">
+                        <h3 class="text-light">Поисковая оптимизация, редизайн и развитие портала AllBoxing.ru: увеличили посещаемость в два раза</h3>
+                    </div>
+                    <div class="case-date">
+                        <span>29.11.23</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <section id="company-clients">
-        <div id="company-clients-header-outter">
-            <h1>Our clients</h1>
-        </div>
-        <div id="company-clients-body-outter">
-            <p>
-                Our clients get the best service, fast service, amazing experience with us. Hurry up and join our huge number of clients.
-            </p>
-        </div>
-        <div id="company-clients-gallery-1">
-            <section class="splide" aria-label="Splide 1" id="clients-gallery-1">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide"><img src="./media/images/clients_photos/1.webp" alt="Client1"></li>
-                        <li class="splide__slide"><img src="./media/images/clients_photos/2.webp" alt="Client2"></li>
-                        <li class="splide__slide"><img src="./media/images/clients_photos/3.webp" alt="Client3"></li>
-                        <li class="splide__slide"><img src="./media/images/clients_photos/4.webp" alt="Client4"></li>
-                        <li class="splide__slide"><img src="./media/images/clients_photos/1.webp" alt="Client1"></li>
-                        <li class="splide__slide"><img src="./media/images/clients_photos/2.webp" alt="Client2"></li>
-                        <li class="splide__slide"><img src="./media/images/clients_photos/3.webp" alt="Client3"></li>
-                        <li class="splide__slide"><img src="./media/images/clients_photos/4.webp" alt="Client4"></li>
-                    </ul>
-                </div>
-              </section>
-        </div>
-        <div id="company-clients-gallery-2">
-            <section class="splide" aria-label="Splide 2" id="clients-gallery-2">
-                <div class="splide__track">
-                    <ul class="splide__list">
-                        <li class="splide__slide"><img src="./media/images/clients_photos/5.webp" alt="Client5"></li>
-                        <li class="splide__slide"><img src="./media/images/clients_photos/6.webp" alt="Client6"></li>
-                        <li class="splide__slide"><img src="./media/images/clients_photos/7.webp" alt="Client7"></li>
-                        <li class="splide__slide"><img src="./media/images/clients_photos/8.webp" alt="Client8"></li>
-                        <li class="splide__slide"><img src="./media/images/clients_photos/5.webp" alt="Client5"></li>
-                        <li class="splide__slide"><img src="./media/images/clients_photos/6.webp" alt="Client6"></li>
-                        <li class="splide__slide"><img src="./media/images/clients_photos/7.webp" alt="Client7"></li>
-                        <li class="splide__slide"><img src="./media/images/clients_photos/8.webp" alt="Client8"></li>
-                    </ul>
-                </div>
-              </section>
-        </div>
-    </section>
-    <section id="company-request">
-        <div id="company-request-content-outter">
-            <div id="company-request-header-outter">
-                <h1 class="text-light">Leave the request</h1>
+        <div class="case type1">
+            <div class="case-photo">
+                <img src="./img/case4.webp" alt="Case photo 4">
             </div>
-            <div id="company-request-body-outter">
-                <p>
-                    You can contact us throw this form and we will help you solve your problem or suggestion.
-                </p>
-            </div>
-            <div id="company-request-contacts">
-                <div id="request-phone">
-                    <i class="fa-solid fa-phone"></i>
-                    <a href="tel:+79000000000" class="text-light">8-800-000-00-00</a>
-                </div>
-                <div id="request-mail">
-                    <i class="fa-solid fa-envelope"></i>
-                    <a href="mailto:example@mail.com" class="text-light">example@mail.com</a>
+            <div class="case-content">
+                <div class="case-content-inner">
+                    <div class="case-title">
+                        <h3 class="text-light">Программный модуль для интеграции и записи числовых данных</h3>
+                    </div>
+                    <div class="case-date">
+                        <span>13.11.23</span>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="company-request-form-outter">
-            <form id="feedback-form" class="ajaxForm" accept-charset="UTF-8">
-                <div id="form-name" class="input-outter">
-                    <input type="text" name="user-name" id="user-name" class="local-save" required placeholder="Your name">
+        <div class="case type1 separate-thumbnail">
+            <div class="case-photo">
+                <img src="./img/case5.webp" alt="Case photo 5">
+            </div>
+            <div class="case-content">
+                <div class="case-content-inner">
+                    <div class="case-title">
+                        <h3>Корпоративная почта. Оптимальный план смены почтового сервиса от опытных администраторов серверовs</h3>
+                    </div>
+                    <div class="case-date">
+                        <span>09.11.23</span>
+                    </div>
+                    <div class="case-text">
+                        <p>Корпоративная почта размещается на домене организации, формирует и повышает доверие потенциальных клиентов и партнёров. Для полноценной работы...</p>
+                    </div>
                 </div>
-                <div id="form-phone" class="input-outter">
-                    <input type="tel" name="user-phone" id="user-phone" class="local-save" placeholder="Your phone">
-                </div>
-                <div id="form-email" class="input-outter">
-                    <input type="email" name="user-email" id="user-email" class="local-save" placeholder="Your email">
-                </div>
-                <div id="form-message" class="input-outter">
-                    <textarea name="user-message" id="user-message" rows="5" class="local-save" required placeholder="Your message"></textarea>
-                </div>
-                <div id="form-acception">
-                    <input type="checkbox" name="user-acception" id="user-acception" class="local-save" required checked>
-                    <label for="user-acception">I accept politics privacy.</label>
-                </div>
-                <div id="submit-button-outter">
-                    <button type="button" id="submit-button">Submit</button>
-                </div>
-            </form>
+            </div>
         </div>
-    </section>
-    <footer>
-        <p>
-            Coffee & Cats™. Your purr-fectly evening.
-        </p>
-        <p>
-            2023. All rights reserved.
-        </p>
-        <img src="./media/images/cat_logo.png" alt="Logo">
-    </footer>
+        <div class="case type2">
+            <div class="case-photo">
+                <img src="./img/case6.webp" alt="Case photo 6">
+            </div>
+            <div class="case-content">
+                <div class="case-content-inner">
+                    <div class="case-title">
+                        <h3 class="text-light">Утечка памяти в Drush при выполнении тяжёлых операций</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="case type1">
+            <div class="case-photo">
+                <img src="./img/case7.webp" alt="Case photo 7">
+            </div>
+            <div class="case-content">
+                <div class="case-content-inner">
+                    <div class="case-title">
+                        <h3 class="text-light">Кейс: апгрейд и миграция на Drupal 9 сайта «Кабельщик»</h3>
+                    </div>
+                    <div class="case-date">
+                        <span>23.10.23</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="show-more-cases-button-outter">
+        <button type="button" id="show-more-cases">ПОКАЗАТЬ ЕЩЁ</button>
+    </div>
+</div>
+<div class="team">
+
+</div>
+<div class="reviews">
+
+</div>
+<div class="partners">
+
+</div>
+<div class="webform" id="webform">
+
+</div>
+<script src="index.js"></script>
 </body>
 </html>
