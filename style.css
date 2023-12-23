@@ -8,6 +8,10 @@
     font-family: "Montserrat", "sans-serif";
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .text-light {
     color: #FFF;
 }
@@ -44,8 +48,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    height: 30px;
-    padding: 3lvh 2dvw;
+    padding: 1% 0;
 }
 .header .menu-container .menu img {
     width: 100%;
@@ -58,16 +61,52 @@
     align-items: center;
     font-size: 16px;
 }
-.header .menu-container  .menu ul,
+.header .menu-container  .menu > ul,
 .header .menu-container  .menu .contact,
 .header .menu-container  .menu .lang {
     display: none;
 }
+
+.navpanel {
+    padding: 0 .5rem;
+    position: relative;
+}
+
 .header .menu-container  .menu #bars  {
     color: #fff;
     font-size: 20px;
-    margin-left: 10dvw;
 }
+
+#mobile-menu-outter {
+    border-top: 1px solid #1f1a1a;
+    position: absolute;
+    right: 0;
+    top: 100%;
+    width: 100dvw;
+    background-color: #000;
+    z-index: 5;
+    display: none;
+}
+
+#mobile-menu-outter > ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#mobile-menu-outter > ul > li{
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 3% 5%;
+    border-bottom: 1px solid #1f1a1a;
+}
+
+#mobile-menu-outter > ul > li > a {
+    text-decoration: none;
+    color: #fff;
+}
+
 .header .data-container {
     margin-top: 5lvh;
 }
@@ -480,9 +519,9 @@
     .header .menu-container .menu img {
         height: 40px;
     }
-    .header .menu-container .menu ul {
+    .header .menu-container .menu > ul {
         width: 100%;
-        max-width: 600px;
+        max-width: 800px;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -494,7 +533,7 @@
         letter-spacing: 2px;
         text-transform: uppercase;
     }
-    .header .menu-container .menu ul li::after {
+    .header .menu-container .menu > ul > li::after {
         content: "";
         display: block;
         width: 100%;
@@ -517,8 +556,49 @@
         text-transform: uppercase;
         margin-right: 5px;
     }
-    .header .menu-container .menu #bars {
+    .header .menu-container .menu > .navpanel {
         display: none;
+    }
+
+    #dropout-menu-li {
+        position: relative;
+    }
+
+    #dropout-menu-li > p {
+        display: flex;
+        gap: 2pt;
+        align-items: center;
+    }
+
+    #dropout-menu-li:hover > #dropout-menu-outter{
+        display: block;
+    }
+    
+    #dropout-menu-outter {
+        display: none;
+        position: absolute;
+        background-color: #f04d35;
+        padding: 5% 0;
+        width: 120%;
+        top: 100%;
+        left: 0;
+        border: 1px solid #f04d35;
+    }
+
+    #dropout-menu-outter > ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #dropout-menu-outter > ul > li {
+        padding: 3% 5%;
+        width: 100%;
+    }
+
+    #dropout-menu-outter > ul > li:hover {
+        background-color: #d13018;
     }
 
     .header .data-container {
